@@ -1,0 +1,49 @@
+body {
+    font-size: 14px;
+    background-image: url('numberImage.jpeg');
+}
+
+.section {
+    margin: 40.8rem 14.8rem;
+}
+
+.div {
+    display: inline-block;
+    margin-left: 14.3rem;
+    margin-top: 7.1rem;
+}
+
+.button {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    background-color: rgb(96, 132, 137);
+    border: 0.17rem solid #0f4b41;
+    border-radius: 0.3rem;
+}
+
+#form {
+    width: 18rem;
+    height: 8rem;
+    text-align: center;
+    margin-top: 13rem;
+    margin-left: 35rem;
+    border: rgb(12, 27, 27) 0.2rem solid;
+    display: flex;
+    border-radius: 0.5rem;
+    background-color: rgb(96, 132, 137);
+}
+
+.loginContainer {
+    text-align: center;
+    margin: 1rem;
+    margin-top: 1.5rem;
+}
+
+.userData{
+    margin-bottom: 0.5rem;
+}
+
+.inputData{
+    margin-left: 1rem;
+}
+

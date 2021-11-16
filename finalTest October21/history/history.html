@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="history.css">
+    <title>History</title>
+    <style type="text/css">
+        @media screen and (min-width: 500px) {
+            a {
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <grid class= "dataToShow">
+        <!-- full name -->
+        <h3 class="userData" id="userName"></h3>
+        <!-- email -->
+        <h3 class="userData" id="userEmail"></h3>
+        <br/>
+    </grid>
+
+    <h4>history:</h4>
+    <div id="history" style="display: none;"></div>
+    <ul id="historyContainer"></ul>
+    <div><button onClick="window.print()">Print this page
+    </button></div>
+    <br/>
+    <br/>
+    <br/>
+
+    <grid class = "shareWithFriends">
+        <h1>share with friends !</h1>
+        <div class="friend-calculation"> 
+            <!-- left operand -->
+            <label for="number1" class="number">number1:</label>
+            <input type="number" name="number1" placeholder="number1" class="number1" id="number1"><br>
+            <!-- operator -->
+            <label for="operator" class="operator">operator:</label>
+            <button data-operation>+</button>
+            <button data-operation>-</button>
+            <button data-operation>*</button>
+            <button data-operation>/</button><br/>
+            <!-- right operand -->
+            <label for="number2" class="number">number2:</label>
+            <input type="number" name="number2" placeholder="number2" class="number2" id="number2"><br>
+
+            <a id="mailIt" 
+                 title="Share by Email">
+                <img src="http://png-2.findicons.com/files/icons/573/must_have/48/mail.png">
+            </a>
+            <a id="whatsappIt" 
+                    data-action="share/whatsapp/share"
+                    target="https://wa.me/972509190717">
+                    <img src="https://img.icons8.com/color/48/000000/whatsapp--v2.png"/>
+                </a>   
+        </div>
+    </grid>
+    <script src="history.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link href="calculator.css" rel="stylesheet">
+    <script src="calculator.js" defer></script>
+  </head>
+  <body>
+    <grid class='userDetails'>
+      <input id='userName' class='userData' disabled></input>
+      <input id='userEmail' class='userData' disabled></input>
+    </grid>
+    <div class="calculator-grid">
+    <div class="output">
+    <div data-previous-operand id="prevOperand" class="previous-operand"></div>
+    <div data-current-operand id="currOperand" class="current-operand"></div>
+    </div>
+
+    <button data-operation>^</button> 
+    <button data-operation>÷</button>
+    <button data-operation>*</button>
+    <button data-operation>%</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>+</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>-</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-delete>DEL</button>
+    <button data-equals class="span-two">=</button>   
+     <button data-number>0</button>
+    <button data-all-clear class="clear">AC</button>
+
+    </div>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="loginContainer"> 
+          <!-- full name -->
+          
+          <label for="full name" class="inputData">Name:</label>
+          <input type="text" name="fullName" placeholder="full name" class="userData" id="userNameToFill"><br>
+          <!-- email -->
+          <label for="email" class="inputData">Email:</label>
+          <input type="email" name="email" placeholder="email" class="userData" id="userEmailToFill"><br>
+
+        <button class="button" id="proceedToCalculator">proceedToCalculator</button>
+      </div>
+      </div>
+    
+    </div>
+
+  <div id="history">
+      <button id="toHistory" i class="fas fa-history"></i>
+      <p id="history-of-calculator">History</p>
+  </div>
+
+  </body>
+</html>
+

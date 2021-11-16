@@ -1,0 +1,145 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('backgroundImg.jpeg');
+  }
+
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    }
+
+    .calculator-grid > button {
+      cursor: pointer;
+      font-size: 2rem;
+      border: 1px, solid #FFFFFF;
+      outline: none;
+      background-color: rbga(255, 255, 255, 0.75);
+    }
+
+      .calculator-grid > button:hover {
+        background-color: #a9a9a9;
+      }
+
+      .span-two {
+        color: white;
+        background-color: teal;
+      }
+
+      .clear {
+        grid-column: span 2;
+        color:white;
+        background-color:teal;
+      }
+
+      .output{
+        grid-column: 1 / -1;
+        background-color: teal;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10px;
+        word-wrap: break-word;
+        word-break: break-all;
+      }
+
+      .output .previous-operand{
+        color: rgba(255,255, 255, 0.75);
+        font-size: 1.5rem;
+      }
+
+      .output .current-operand{
+        color: white;
+        font-size: 2.5rem;
+      }
+
+      .fa-history {
+        font-size: 1.3rem;
+        color: rgb(3, 34, 34);
+        position: fixed;
+        right: 1.5rem;
+        top: 1.5rem;
+        border-radius: 1.5rem;
+      }
+
+      .fa-history:hover {
+        background-color: rgb(138, 170, 170);
+        border-radius: 0.2 rem;
+      }
+
+      .userDetails{
+        display: grid;
+        grid-template-rows: repeat(3, 20px);
+        gap: 10px;
+        grid-auto-flow: column;
+        grid-auto-columns: 300px 100px;
+      }
+
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+.loginContainer {
+text-align: center;
+margin: 1rem;
+margin-top: 1.5rem;
+}
+
+.userData{
+margin-bottom: 0.5rem;
+width: 100%;
+padding: 12px 20px;
+box-sizing: border-box;
+color: blue;
+font-size: 20px;
+}
+
+.inputData{
+margin-left: 1rem;
+}
